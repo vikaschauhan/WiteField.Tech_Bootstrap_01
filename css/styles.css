@@ -32,9 +32,8 @@ h1 {
   font-weight: bold;
   font-size: 3.5em; }
 
-<<<<<<< HEAD
 #join-container {
-  background: url("../assests/background-2067126_640.jpg");
+  background-image: url("../assests/background-2067126_640.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
   #join-container h2 {
@@ -51,7 +50,7 @@ h1 {
     border: none;
     color: #000;
     cursor: pointer; }
-=======
+
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -7199,4 +7198,3 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
->>>>>>> parent of cddbe06... change style for form input and button
