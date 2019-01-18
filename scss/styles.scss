@@ -1,0 +1,108 @@
+// Variables Overrides
+
+//Colors
+// Color system
+
+$green: #5cb85c;
+
+//$body-bg:                   #1a1b1d;
+$primary:       $green !default;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   #1a1b1d !default;
+$body-color:                #fff !default;
+
+// hero section
+// #hero::after{
+//         content: "";
+//         position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+//         z-index: -1;
+//         background-image: 
+//           radial-gradient(ellipse closest-side, rgba(15, 14, 22, 0.75), #100e17),
+//           url(https://css-tricks.com/wp-content/uploads/2018/11/css-tricks-circles.png);
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         opacity: 0.75;
+    
+// }
+#hero{
+    background-image: radial-gradient(ellipse closest-side, rgba(15, 14, 22, 0.75), #100e17),
+    url('../assests/scrapbook-1357681_640.jpg');
+    background-size: cover;
+    background-position: 0 60%;
+}
+
+.hero-img{
+    width: 80%;
+}
+
+// navigation bar section modification
+.navbar{
+    width: 100%;
+    background: none !important;
+    @media (max-width: 34em) {
+        background: black !important;
+    }
+
+    .navbar-toggle{
+        cursor: pointer;
+        outline: 0;
+    }
+
+    .nav-link{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .nav-item{
+        padding: 0 1rem;
+
+        @media (max-width: 34em) {
+            padding: 0;
+        }
+
+        .nav-link{
+            @media (max-width: 34em) {
+                font-weight: normal;
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+// heading One
+h1{
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 9)
+  ),
+  $spacers
+);
+
+//Bootstrap Sass imports
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+
